@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .img {
+            border: 0.2rem solid white;
+            border-radius: 50%;
+            margin: 0.4rem
+        }
+
+        nav {
+            display: flex;
+            /* border: 0.2rem solid red; */
+            justify-content: space-between;
+            align-items: center;
+            height: 11vh;
+            background-color: black;
+            width: 100vw;
+        }
+
+        .logo {
+            /* border: 0.2rem solid red; */
+            margin-left: 6rem;
+        }
+
+        .navigation {
+            /* border: 0.2rem solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+
+        }
+
+        .search {
+            /* border: 0.2rem solid red; */
+            margin-right: 4rem;
+            padding: 0.5rem;
+            padding-right: 10rem;
+            font-size: medium;
+        }
+
+        .navigation li {
+            margin: 1rem;
+            list-style: none;
+            /* border: 0.2rem solid green; */
+            color: white;
+            padding: 1rem;
+            font-size: medium;
+        }
+
+        .search span {
+            color: white;
+        }
+
+        .navbar {
+            padding-right: 5rem;
+        }
+
+        .container2 {
+            height: 89vh;
+            width: 100vw;
+            /* border: 0.2rem solid blue; */
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/sunrise.jpg");
+            background-position: -24rem -18rem;
+        }
+
+        .iconbar {
+            width: 6vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* border: 0.2rem solid black; */
+        }
+
+        .textdiv {
+            width: 45vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+            flex-direction: column;
+            /* border: 0.2rem solid black; */
+            font-size: medium;
+            color: white;
+        }
+
+        .animationdiv {
+            width: 35vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 0.2rem solid black; */
+        }
+
+        button {
+            margin-top: 2rem;
+            padding: 0.5rem;
+            border-radius: 1rem;
+        }
+
+        .textdiv p {
+            font-size: larger;
+        }
+
+        .animationdiv img {
+            height: 40rem;
+        }
+
+        .container3 button {
+            margin-top: 2rem;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            background-color: white;
+        }
+
+        .container3 {
+            /* border: 0.2rem solid gold; */
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            height: 12vh;
+            align-items: center;
+            color: white;
+            background-color:#211d1d ;
+        }
+
+        .container4 {
+            /* border: 0.2rem solid rgb(83, 17, 168); */
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            height: 200vh;
+            align-items: center;
+            color: white;
+            background-color: #170e0e;
+            font-size: small;
+        }
+
+        .maindiv1 {
+            width: 40vw;
+            /* border: 0.2rem solid rgb(83, 17, 168); */
+            height: 170vh;
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+            flex-direction: column;
+            margin-left: 14rem;
+            margin-top: 10rem;
+        }
+
+        .maindiv2 {
+            width: 30vw;
+            /* border: 0.2rem solid rgb(83, 17, 168); */
+            height: 143vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            flex-direction: column;
+        }
+
+        .imagediv1 {
+            width: 10vw;
+            /* border: 0.2rem solid rgb(83, 17, 168); */
+            height: 200vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .imagediv2 {
+            width: 17vw;
+            /* border: 0.2rem solid rgb(236, 214, 11); */
+            height: 30vh;
+        }
+
+        .div-1 {
+            display: flex;
+            margin-right: 2rem;
+
+        }
+
+        .div-2 {
+            margin-top: 1.5rem;
+        }
+
+        .subdiv {
+            /* border: 0.2rem solid rgb(67, 63, 71); */
+            padding: 2rem;
+            padding-left: 0rem;
+            padding-right: 20rem;
+            margin-bottom: 2rem;
+        }
+
+        .imagediv2 img {
+            height: 26rem;
+            width: 12rem;
+        }
+
+        .subdiv2 img {
+            height: 15rem;
+            width: 18rem;
+            margin-left: 5rem;
+        }
+
+        .subdiv-1 {
+            padding-right: 2rem;
+        }
+
+        h2 {
+            display: inline;
+            padding-right: 0.5rem;
+        }
+
+        .heading {
+            padding-bottom: 1rem;
+        }
+
+        .subdiv2 {
+
+            /* border: 0.2rem solid rgb(67, 63, 71); */
+            margin-bottom: 2rem;
+            margin-right: 9rem;
+        }
+
+        #para {
+            margin-top: 2rem;
+        }
+
+        #para2 {
+            margin-top: 1.5rem;
+
+        }
+
+        .heading5 {
+            margin-left: 8rem;
+        }
+
+        .container4 span {
+            border-bottom: 0.2rem solid white;
+            padding-bottom: 0.6rem;
+            padding-top: 0.6rem;
+        }
+
+        /* .navigation span{
+            border-bottom: 0.2rem solid white;
+            padding-bottom: 2rem;
+        } */
+
+        h1 {
+            display: inline;
+        }
+
+        .textdiv6 span {
+            border: none;
+        }
+
+        .mainheading {
+            padding-left: 8rem;
+        }
+
+        ul :hover {
+            border-bottom: 0.2rem solid white;
+            padding-bottom: 2rem;
+        }
+
+        .button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #head {
+            border-bottom: 2px solid white;
+            background-origin: padding-box;
+        }
+        footer{
+            height: 30vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.1rem;
+            background-color: dimgray;
+            /* color:white; */
+        }
+        .footerdiv4{
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            align-items: left;
+        }
+        footer p{
+            padding: 0.3rem;
+        }
+        footer h2{
+            margin-bottom: 3rem;
+        }
+
+    </style>
+    <script>
+        const anime = document.getElementById("head");
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Images/logo.png" alt="Error"></div>
+            <div class="navbar">
+                <ul class="navigation">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Updates</li>
+                    <li>Career</li>
+                    <li>Shop</li>
+                </ul>
+            </div>
+            <div class="search">
+                <img src="Images/search.png" alt="Error">
+                <span>Search</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container2">
+            <div class="iconbar">
+                <img class="img" src="Icons/1492718745-facebook_83608.png" alt="Error">
+                <img class="img" src="Icons/1492718765-tumblr_83611.png" alt="Error">
+                <img class="img" src="Icons/insta.png" alt="Error">
+                <img class="img" src="Icons/1492718751-youtube_83605.png" alt="Error">
+            </div>
+            <div class="textdiv">
+                <p>Space Exploration Technology Corp. trading as SpaceX, is a private American aerospace manufacturer
+                    headquaters Calofornia.</p>
+                <button class="button">Explore space</button>
+            </div>
+            <div class="animationdiv">
+                <img src="Images/astronaut.png" alt="Error">
+            </div>
+        </div>
+        <div class="container3">
+            <h1>Starlink Mission</h1>
+            <button class="button">Join Now</button>
+        </div>
+        <div class="container4">
+            <div class="maindiv1">
+                <div class="textdiv2 subdiv">
+                    <div class="div-2">
+                        <h2 class="heading"><span>FALC</span>ON9</h2>
+                        <p id="para">Falcon9 is a two-staged rocket designed and manufactured by SpaceX to the reliable
+                            and safe
+                            transport of satelites and the dragon spacecraft into orbit.
+                        </p>
+                    </div>
+                </div>
+                <div class="textdiv3 subdiv">
+                    <div class="div-3">
+                        <h2 class="heading"><span>DRAGON SPA</span>CECRAFT</h2>
+                        <p id="para">Dragon carries cargo in the spacecraft's presurized capsule and unpersurized trunk,
+                            which can
+                            also accomodate secondary payloads.In the future Drangon wil carry astronauts in the
+                            presurized capsule as well.
+                        </p>
+                        <button class="button">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="textdiv4 subdiv">
+                    <div class="div-4">
+                        <h2 class="heading"><span>COMPOSITE FA</span>IRING</h2>
+                        <p id="para">The payload farming is the delievery of satellites to destination in low earth
+                            orbit(LEO),
+                            geosynchronous transfer orbit (GTO) and beyond.
+                        </p>
+                        <button class="button">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="textdiv5 subdiv">
+                    <div class="div-5">
+                        <h2 class="heading"><span>FIRST ST</span>AGE</h2>
+                        <p id="para">Falcon9's first stage incorporates nine Merlin engines and aluminium-lithium alloy
+                            tanks
+                            containing liquid oxygen and rocket grade kerosene(RP-1) propellant.
+                        </p>
+                        <button class="button">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="textdiv6 subdiv">
+                    <div class="div-1">
+                        <div class="subdiv-1">
+                            <p><span>EN</span>GINE</p>
+                            <h1>9</h1>
+                        </div>
+                        <div class="subdiv-2">
+                            <p><span>BURN</span>TIME</p>
+                            <h1>162</h1><span>SEC</span>
+                        </div>
+                    </div>
+                    <div class="div-2">
+                        <p><span>Thrust At S</span>ea Level</p>
+                        <h1>7,607kN1</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="imagediv1">
+                <img id="head" src="Images/rocket1.png" alt="Error">
+                <img src="Images/rocket2.png" alt="Error">
+                <img src="Images/rocket3.png" alt="Error">
+            </div>
+            <div class="maindiv2">
+                <div class="div-2 subdiv2">
+                    <h2 class="mainheading">PAYLOAD</h2>
+                    <p id="para">Falcon 9 delievers payload to space aboard the Dragon spacecraft or inside a composite
+                        fairing.
+                    </p>
+                </div>
+                <div class="div-3 subdiv2">
+                    <h2 class="heading"><span>SECOND STA</span>GE</h2>
+                    <p id="para">The second stage, powered by a single Merlin vacuum engine, delievers falcon 9's
+                        payload to the desired orbit.For maximum reliability, the second stage has redundant igniter
+                        systems.
+                    </p>
+                </div>
+                <div class="textdiv6 subdiv2">
+                    <div class="div-1">
+                        <div class="subdiv-1">
+                            <p><span>EN</span>GINE</p>
+                            <h1>1</h1>
+                        </div>
+                        <div class="subdiv-2">
+                            <p><span>BURN</span>TIME</p>
+                            <h1>397</h1><span>SEC</span>
+                        </div>
+                    </div>
+                    <div class="div-2">
+                        <p><span>Thrust At Se</span>a Level</p>
+                        <h1>934kN210</h1>
+                    </div>
+                </div>
+                <div class="div-5 subdiv2">
+                    <img src="Images/engines.png" alt="Error">
+                </div>
+                <div class="div-5 subdiv2">
+                    <P class="heading5">NINE MARKINE ENGINES</P>
+                    <p id="para2">with its nine first-stage Marline engines clustered together. Falcon 9 can sustain
+                        upto two engines shutdown during flight and still sucessfully complete its mission. falcon 9 is
+                        the only launch vehicle in its class with this key reliability feature.
+                    </p>
+                </div>
+            </div>
+            <div class="imagediv2">
+                <img src="Images/bus.png" alt="Error">
+            </div>
+        </div>
+        <footer>
+            <div class="footerdiv1">
+                <img src="Images/logo.png" alt="Error">
+                <p>@2020 Rish Designs</p>
+            </div>
+            <div class="footerdiv2">
+                <h2><span>Abou</span>t Us</h2>
+                <p>WHO WE ARE</p>
+                <p>CONTACT US</p>
+                <p>FAQs</p>
+                <p>MISSIONS</p>
+                <p>OTHER COMPANIES</p>
+            </div>
+            <div class="footerdiv3">
+                <h2><span>Compa</span>any</h2>
+                <p>CAREERS</p>
+                <p>LEGAL</p>
+                <p>POLICY</p>
+                <p>PRESS</p>
+                <p>BLOG</p>
+            </div>
+            <div class="footerdiv4">
+                <h2><span>Soci</span>als</h2>
+                <div class="imgdiv">
+                <img class="img" src="Icons/1492718745-facebook_83608.png" alt="Error">
+                <img class="img" src="Icons/1492718765-tumblr_83611.png" alt="Error">
+                <img class="img" src="Icons/insta.png" alt="Error">
+                <img class="img" src="Icons/1492718751-youtube_83605.png" alt="Error">
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
